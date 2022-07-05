@@ -8,7 +8,7 @@ _oshi_ are used and USB devices get attached/detached.
 Build the project with `mvn clean install`.
 
 # Test
-
+Deploy the resulting bundle (in the `target` folder) to Eclipse Kura.  
 In order to replicate the issue, a 20-seconds `Thread.sleep()` has been put to ensure that oshi runs only after 
 usb4java services have been called, as this order seems to be the triggering factor for this issue.  
 When the `Thread.sleep()` ends, this message will be printed to standard output:  
